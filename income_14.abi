@@ -1,0 +1,69 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sat Dec  1 20:03:20 2018",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "setup_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "service_info",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "base": "",
+            "fields": [
+                {
+                    "name": "setup_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "srvportal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "setup_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "service_info",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "remove",
+            "type": "remove",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "srvportal",
+            "type": "srvportal",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
