@@ -1,7 +1,7 @@
 # Pay_Go_Service_SmartContract
 Keep vendor information in EOS smart contract
 
-The smart contract is compiled by EOS CDT 1.3
+The smart contract can be compiled by EOS CDT 1.3.
 
 You may need to update the folder name to income_14.
 
@@ -14,11 +14,13 @@ cname ..
 make
 ```
 
+the compiled abi file and wasm is located in build foldler. You may need to copy them to upper folder before deploy contract.
+
 deploy smart contract
 ```
 cleos -u https://nodes.get-scatter.com set contract  youreosaccount income_14 --permission youreosaccount@active
 ```
-create record
+create record, with setup_time:1, service_info:"dead beef duck"
 ```
 cleos  -u https://nodes.get-scatter.com push action youreosaccount create '{"setup_time":1, "service_info":"dead beef duck"}' --permission youreosaccount@active
 ```
