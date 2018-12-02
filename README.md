@@ -1,5 +1,5 @@
 # Pay_Go_Service_SmartContract
-Keep vendor information in EOS smart contract
+Keep information in EOS smart contract. Every can visit the information, and nobody except owner can remove it.
 
 The smart contract can be compiled by EOS CDT 1.3.
 
@@ -14,7 +14,7 @@ cname ..
 make
 ```
 
-the compiled abi file and wasm is located in build foldler. You may need to copy them to upper folder before deploy contract.
+The abi file and wasm file are both generated in build folder. You may need to copy them to upper folder before deploy contract.
 
 deploy smart contract
 ```
